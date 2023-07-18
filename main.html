@@ -1,64 +1,34 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-  <title>Feedback Form</title>
-  <style>
-    /* Add some basic styling for demonstration purposes */
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-
-    input[type="text"],
-    input[type="url"],
-    select,
-    input[type="range"] {
-      width: 100%;
-      padding: 5px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    input[type="submit"] {
-      margin-top: 10px;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  </style>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <form>
-    <h2>Feedback Form</h2>
+	<!-- the entire body must be written by student -->
+	<h1>Feedback Form</h1>
+<form method="post">
+  <label for="name">Your name</label>
+  <input type="text" id="name" minlength="3" maxlength="50" required />
+  <br />
+  <label for="portfolio">You portfolio</label>
+  <input type="url" id="portfolio" required />
+  <br />
+  <label for="favColor">Your fav color</label>
+  <input type="color" id="favColor" />
+  <br />
+  <label for="likeness">From one to hundred choose likeness</label>
+  <input type="range" id="likeness" min="1" max="100" />
+  <br />
+  <button type="submit">Submit</button>
+  <br />
+  <button type="reset">Reset form</button>
+</form>
+    <script type="text/javascript" src="./script.js">
+</script>
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
-
-    <label for="portfolio">Portfolio:</label>
-    <input type="url" id="portfolio" name="portfolio" required>
-
-    <label for="favColor">Favorite Color:</label>
-    <select id="favColor" name="favColor">
-      <option value="red">Red</option>
-      <option value="blue">Blue</option>
-      <option value="green">Green</option>
-      <option value="yellow">Yellow</option>
-      <option value="orange">Orange</option>
-    </select>
-
-    <label for="likeness">Likeness:</label>
-    <input type="range" id="likeness" name="likeness" min="1" max="100">
-
-    <input type="submit" value="Submit">
-  </form>
 </body>
+
 </html>
